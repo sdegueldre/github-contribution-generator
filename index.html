@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="margin:0;">
+    <div style="width:100%;height:100vh;padding:1rem;display:flex;align-items:center;flex-direction:column;box-sizing:border-box">
+        <label style="text-align:center">
+            Choose an image:
+            <input type="file" accept="image/*">
+        </label>
+        <canvas width="52" height="7" style="width:100%;image-rendering:crisp-edges;margin-top:1rem;"></canvas>
+        <label style="text-align:center;display:contents;">
+            Bash command:
+            <textarea style="width:100%;flex-grow:1;"></textarea>
+        </label>
+        <p>Fair warning: the color mapping sucks, apparently github uses quartiles to determine colors but they also remove outliers before doing so, so if you don't have enough of a certain shade, github will collapse 2 shades into one.</p>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>

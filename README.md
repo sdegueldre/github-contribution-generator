@@ -21,3 +21,14 @@ done
 ```
 Which, if these commits are your only activity on github for the last year, will make your contribution graph look like this:
 ![image](https://user-images.githubusercontent.com/42469486/177003850-b553da30-332e-4e38-afd5-cdd6ca9e46a3.png)
+
+
+Currently, I don't do any scaling or color remapping, I take the top left 52 by 7 pixels of the image you choose and generate a number of commits that corresponds to the closest shade of green to that color, for best results, download the eyes_snail.png image from the repo and just draw your image using the same palette. Make sure all shades are present in sufficient amounts so that github doesn't treat those days as "outliers" and collapse two shades into one.
+
+If you're using zsh, change the `-a` flag given to read to `-A`.
+
+As far as I'm aware, github generates your activity when you push, and removing the commits by rewriting history and force-pushing won't remove the activity, the only way is to delete the repo completely. This project is completely impractical to use on a real account and your real contributions will mess with the graph and may shift the shades. Just make a novelty account to troll your friends.
+
+Shout out to Nick Barth ([@nick-barth](https://github.com/nick-barth) on github, [star_ansible](https://www.twitch.tv/star_ansible) on Twitch) who inspired me to do this.
+
+Try it yourself [here](https://sdegueldre.github.io/github-contribution-generator/)
